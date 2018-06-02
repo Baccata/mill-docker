@@ -1,8 +1,12 @@
 FROM debian:stretch-slim
 
 ARG TAG
+ARG IMAGE_NAME
+ARG SOURCE_BRANCH
 
 RUN echo $TAG
+RUN echo $IMAGE_NAME
+RUN echo $SOURCE_BRANCH
 
 CMD ["echo", "PIPO"]
 
